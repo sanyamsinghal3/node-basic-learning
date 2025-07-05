@@ -1,0 +1,17 @@
+{
+  "name": "node-learning",
+  "version": "2.0.0",
+  "description": "basic of node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "app.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node-basic-learing"
+  },
+  "author": "sanyam singhal",
+  "license": "ISC",
+  "type": "module"
+}
