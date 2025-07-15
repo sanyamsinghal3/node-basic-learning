@@ -65,4 +65,21 @@ try {
 
 # Day 3
 1. Create http server using node.js without express js. code added in app.js
+import http from 'http';
+
 2. install express and create server with this (npm install express)
+import express from 'express';
+
+3. server html file using express
+project/
+├── server.js
+└── public/
+    └── index.html
+
+app.js	    Defines and exports the Express application (app = express()), routes, and middleware
+server.js	Starts the server, listens on a port, and imports the app from app.js
+
+4. Serve the entire public/ folder statically
+when home route (/) trigger then public/index.html serve
+
+5. create pages in public folder and added route in app.js, you can seprately create route in route folder/pages.js file and exposrt them.
