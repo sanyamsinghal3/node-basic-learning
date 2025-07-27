@@ -6,9 +6,10 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname  = path.dirname(__filename);
 
-// ##Middleware
-//app.use(express.json());
-
+app.use((req, res, next) => {
+  console.log('Middleware called');
+  next(); // Pass control to the next middleware
+});
 
 // Routes
 app.get('/', (req, res) => {

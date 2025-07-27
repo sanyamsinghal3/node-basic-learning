@@ -83,3 +83,21 @@ server.js	Starts the server, listens on a port, and imports the app from app.js
 when home route (/) trigger then public/index.html serve
 
 5. create pages in public folder and added route in app.js, you can seprately create route in route folder/pages.js file and exposrt them.
+
+6. Middlewalre in node.js
+Middleware is a type of function that execute before main routes or function. this basicly filter http request / verifiyed.
+Keep middleware modular (put in middleware/ folder).
+
+
+type of middleware
+# Application-level	Middleware : applied to the entire app (app.use(...))
+# Router-level	Middleware     : used with express.Router()
+# Built-in	            Like express.static, express.json(), express.urlencoded()
+# Error-handling	      Catches and handles errors (has 4 args: err, req, res, next)
+# Third-party	          From npm (e.g., morgan, cors, helmet)
+
+logging middleware
+app.use((req, res, next) => {
+  console.log(`[${req.method}] ${req.url}`);
+  next(); // Pass to the next handler
+});
