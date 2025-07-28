@@ -101,3 +101,8 @@ app.use((req, res, next) => {
   console.log(`[${req.method}] ${req.url}`);
   next(); // Pass to the next handler
 });
+
+7. Now creating Rest api using mqsql DB, DB connection in db.js
+ api route started in app.js file. here two api get and post with validation
+
+ This all about the nodeJs with express from installation to api creations with mqsql
