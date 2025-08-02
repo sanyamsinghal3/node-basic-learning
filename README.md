@@ -89,14 +89,14 @@ Middleware is a type of function that execute before main routes or function. th
 Keep middleware modular (put in middleware/ folder).
 
 
-type of middleware
-# Application-level	Middleware : applied to the entire app (app.use(...))
-# Router-level	Middleware     : used with express.Router()
-# Built-in	            Like express.static, express.json(), express.urlencoded()
-# Error-handling	      Catches and handles errors (has 4 args: err, req, res, next)
-# Third-party	          From npm (e.g., morgan, cors, helmet)
+#  type of middleware
+1. Application-level	Middleware : applied to the entire app (app.use(...))
+2. Router-level	Middleware     : used with express.Router()
+3. Built-in	            Like express.static, express.json(), express.urlencoded()
+4. Error-handling	      Catches and handles errors (has 4 args: err, req, res, next)
+5. Third-party	          From npm (e.g., morgan, cors, helmet)
+6. logging middleware
 
-logging middleware
 app.use((req, res, next) => {
   console.log(`[${req.method}] ${req.url}`);
   next(); // Pass to the next handler
@@ -106,3 +106,8 @@ app.use((req, res, next) => {
  api route started in app.js file. here two api get and post with validation
 
  This all about the nodeJs with express from installation to api creations with mqsql
+
+ # MONGOOSE DB 
+  INSTALL USINGN MONGOOSE DB PACKCGES Aausing "npm i mongoose"
+  =>in this we do practice for data model using mongoose.
+  * Todo data Model for todos app, all code into models folder. 
